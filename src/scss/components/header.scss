@@ -1,0 +1,21 @@
+.logo {
+  display: grid;
+  grid-template-columns: 0fr 1fr;
+  align-items: center;
+  grid-column-gap: 9px;
+}
+
+.header {
+  height: 49px;
+  padding: 0 20px;
+  grid-area: header;
+  border-bottom: $border;
+  background-color: $black-light;
+  position: fixed;
+  display: grid;
+  align-content: center;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
