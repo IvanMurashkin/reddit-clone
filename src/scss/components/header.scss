@@ -9,13 +9,35 @@
   height: 49px;
   padding: 0 20px;
   grid-area: header;
-  border-bottom: $border;
+  border-bottom: $border $gray-dark;
   background-color: $black-light;
   position: fixed;
-  display: grid;
+  display: flex;
+  justify-content: space-between;
   align-content: center;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
+}
+
+.auth {
+  display: flex;
+  align-items: center;
+
+  &__btn {
+    border: $border $smoke;
+    color: $smoke;
+    background-color: transparent;
+    border-radius: 3px;
+    padding: 3px 16px;
+    width: 120px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 24px;
+  }
+}
+
+.error {
+  color: red;
 }
